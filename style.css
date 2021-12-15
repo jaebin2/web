@@ -28,7 +28,7 @@
 
 .side_list{
     position: absolute;
-    left: 0px;
+    left: -300px;
     top: 50px;
     bottom: 0;
     border-right: 1px solid #000;
@@ -46,7 +46,7 @@
 }
 
 header {
-    display: inline-block
+    display: inline
 }
 
 #grid{
