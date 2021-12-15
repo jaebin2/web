@@ -1,7 +1,7 @@
 .blind {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -10,28 +10,28 @@
 }
 
 .side_toggle_btn::before {
-	content: ">";
+	content: "<";
     display: inline-block;
     width: 0px;
     font-size: 24px;
     text-align: center;
-    border-right: 1px solid #000;
+    
 }
 
 .side_input:checked + .side_toggle_btn::before{
-    content: "<";
+    content: ">";
 }
 
 .side_input:checked  ~ .side_list{
-    left: 0;
+    right: 0;
 }
 
 .side_list{
     position: absolute;
-    left: 0px;
+    right: 0px;
     top: 50px;
     bottom: 0;
-    border-right: 1px solid #000;
+    border-left: 1px solid #000;
     width: 300px;
     font-size: 24px;
     text-align: center;
@@ -52,7 +52,7 @@ header {
 #grid{
     border:2px solid pink;
     display:grid;
-    grid-template-columns: 0px 1fr;
+    grid-template-columns: 1fr 300px;
 }
 
 a {
