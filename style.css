@@ -28,7 +28,7 @@
 
 .side_list{
     position: absolute;
-    left: -200px;
+    left: 0px;
     top: 50px;
     bottom: 0;
     border-right: 1px solid #000;
