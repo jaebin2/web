@@ -12,7 +12,7 @@
 .side_toggle_btn::before {
 	content: ">";
     display: inline-block;
-    width: 50px;
+    width: -300px;
     font-size: 24px;
     text-align: center;
     border-right: 1px solid #000;
@@ -34,6 +34,7 @@
     border-right: 1px solid #000;
     width: 300px;
     font-size: 24px;
+    text-align: center;
     transition: 0.3s ease-in;
 }
 
@@ -45,10 +46,16 @@
 }
 
 header {
-    display: inline
+    display: inline-block
+}
+
+#grid{
+    border:2px solid pink;
+    display:grid;
+    grid-template-columns: 0px 1fr;
 }
 
 a {
     color:black;
     text-decoration: none;
-  }
+}
