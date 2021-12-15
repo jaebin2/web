@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     width: 1px;
+    right: 25px;
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -10,9 +11,9 @@
 
 .side_toggle_btn::before {
     position: fixed;
-	content: none "<";
+	content: "<";
     display: inline-block;
-    right: 1fr 25px;
+    right: 25px;
     width: 0px;
     line-height: 50px;
     font-size: 24px;
@@ -22,7 +23,7 @@
 }
 
 .side_input:checked + .side_toggle_btn::before{
-    content: none ">";
+    content: ">";
 }
 
 .side_input:checked  ~ .side_list{
@@ -56,6 +57,7 @@ header {
 
 #grid{
     border:2px solid pink;
+    padding: 10px;
     display:grid;
     grid-template-columns: 1fr;
 }
