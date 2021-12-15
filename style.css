@@ -1,7 +1,6 @@
 .blind {
     position: fixed;
     top: 0;
-    right: 25px;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -10,9 +9,9 @@
 }
 
 .side_toggle_btn::before {
-	content: "<";
+	content: none "<";
     display: inline-block;
-    right: 0px;
+    right: 1fr 0px;
     width: 0px;
     line-height: 50px;
     font-size: 24px;
@@ -26,17 +25,17 @@
 }
 
 .side_input:checked  ~ .side_list{
-    right: 200px;
+    right: 0px;
 }
 
 .side_list{
     position: fixed;
-    right: -200px;
+    right: -250px;
     top: 50px;
     bottom: 0;
     border-left: 1px solid #000;
     background-color: coral;
-    width: 200px;
+    width: 250px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
