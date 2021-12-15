@@ -1,0 +1,39 @@
+.side_toggle_btn::before {
+	content: ">";
+    display: inline-block;
+    width: 50px;
+    font-size: 24px;
+    text-align: center;
+    border-right: 1px solid #000;
+}
+
+.side_input:checked + .side_toggle_btn::before{
+    content: "<";
+}
+
+.side_input:checked  ~ .side_list{
+    left: 0;
+}
+
+.side_list{
+    position: absolute;
+    left: -200px;
+    top: 50px;
+    bottom: 0;
+    border-right: 1px solid #000;
+    width: 300px;
+    font-size: 24px;
+    transition: 0.3s ease-in;
+}
+
+.side_link {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+  }
