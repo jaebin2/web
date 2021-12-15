@@ -11,7 +11,7 @@
 .side_toggle_btn::before {
 	content: "<";
     display: inline-block;
-    right: 20px;
+    right: 1fr;
     width: 0px;
     font-size: 24px;
     font-weight: bold;
@@ -24,7 +24,7 @@
 }
 
 .side_input:checked  ~ .side_list{
-    right: 0;
+    right: 300px;
 }
 
 .side_list{
