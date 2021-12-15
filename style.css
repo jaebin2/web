@@ -9,9 +9,10 @@
 }
 
 .side_toggle_btn::before {
+    position: fixed;
 	content: none "<";
     display: inline-block;
-    right: 1fr 0px;
+    right: 1fr 25px;
     width: 0px;
     line-height: 50px;
     font-size: 24px;
@@ -21,7 +22,7 @@
 }
 
 .side_input:checked + .side_toggle_btn::before{
-    content: ">";
+    content: none ">";
 }
 
 .side_input:checked  ~ .side_list{
